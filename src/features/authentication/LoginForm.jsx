@@ -115,16 +115,17 @@ async  function handlerSubmit(e){
     <div className="flex justify-between w-full bg-green ">
          <div className="relative flex justify-center gap-4 min-w-[100px] max-w-[150px] w-[30%]  text-white   rounded-full font-bold">
 
-        <button className="justify-center gap-4 w-full bg-gradient-to-r p-1 from-sky-400 to-indigo-500 text-white   rounded-full font-bold"
+        <button className="justify-center gap-4 h-auto w-full bg-gradient-to-r p-1 from-sky-400 to-indigo-500 text-white   rounded-full font-bold"
           disabled={isLoading} 
            type="submit">
-          login
+          
+          {isLoading ?<MiniSpinner  colorSpinner='indigo-600'/>:'login'}
           
         </button>
-          {isLoading ?<MiniSpinner  colorSpinner='indigo-600'/>:''}
+          
          </div>
 
-        <a disabled={isLoading} onClick={()=>navigate('/signup')} className="w-[30%] min-w-[100px] max-w-[150px]  bg-gradient-to-r from-sky-400  to-indigo-500 hover:bg-gray-800  text-white p-1  rounded-full font-bold text-center cursor-pointer">
+        <a disabled={isLoading} onClick={()=>navigate('/signup')} className="w-[30%] h-auto min-w-[100px] max-w-[150px]  bg-gradient-to-r from-sky-400  to-indigo-500 hover:bg-gray-800  text-white p-1  rounded-full font-bold text-center cursor-pointer">
         sign up
           </a>
           </div>

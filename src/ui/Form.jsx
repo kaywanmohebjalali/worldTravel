@@ -110,7 +110,7 @@ const Form = () => {
               ref={countryElem}
               defaultValue={location?.countryName ?? ""}
               type="text"
-              className="w-full  bg-slate-200 rounded-sm p-1 sm:p-2 text-black outline-none ring-indigo-400 focus:ring-4  focus:font-bold"
+              className="w-full pe-10 overflow-auto  bg-slate-200 rounded-sm p-1 sm:p-2 text-black outline-none ring-indigo-400 focus:ring-4  focus:font-bold"
             />
             <span className=" text-black absolute top-[15%] right-3 h-full ">
               {convertToEmoji(location?.countryCode ?? "")}
@@ -129,7 +129,7 @@ const Form = () => {
               ref={cityElem}
               defaultValue={location?.city ?? ""}
               type="text"
-              className="w-full  bg-slate-200 rounded-sm p-1 sm:p-2 text-black outline-none ring-indigo-400 focus:ring-4  focus:font-bold"
+              className="w-full overflow-auto  bg-slate-200 rounded-sm p-1 sm:p-2 text-black outline-none ring-indigo-400 focus:ring-4  focus:font-bold"
             />
           </div>
         </div>

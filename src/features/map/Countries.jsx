@@ -32,7 +32,7 @@ const Countries = () => {
   return (
     <ul
     style={{ gridTemplateColumns: "repeat(auto-fit, minmax(100px, 600px))" }}
-    className="grid gap-4  justify-center"
+    className="grid gap-4  justify-center px-2"
     >
       {countries &&
         countries.map((country, index) => (

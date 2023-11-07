@@ -86,3 +86,16 @@
 ::-webkit-scrollbar-thumb {
   background: #1ED4F2;
 }
+
+
+.text-country{
+  white-space: nowrap;
+  overflow: auto;
+  width: 90%;
+  margin: auto;
+
+}
+
+.text-country::-webkit-scrollbar {
+  display: none;
+}

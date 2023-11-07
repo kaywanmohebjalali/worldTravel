@@ -237,21 +237,22 @@ const SignupForm = () => {
           iconClick={<img src="/icon-click-1.png" alt="" />}
           iconDrop={<img className="drop" src="/icon-upload-drop.png" alt="" />}
         >
-          <input accept="image/*" type="file" ref={avatarEl} multiple/>
+          <input disabled={isLoading} accept="image/*" type="file" ref={avatarEl} multiple/>
         </UploadImage.Drop>
       </UploadImage>
         </div>
 
-        <div className="mx-auto relative flex justify-center gap-4 w-[150px]  bg-gradient-to-r from-pink-500 to-yellow-500 text-white   rounded-full font-bold">
+        <div className="mx-auto relative  flex justify-center gap-4 w-[150px]  bg-gradient-to-r from-pink-500 to-yellow-500 text-white   rounded-full font-bold">
           <button
-           className="justify-center gap-4 w-full bg-gradient-to-r p-1 from-sky-400 to-indigo-500 text-white   rounded-full font-bold"
+           className="justify-center h-[35px] gap-4 w-full bg-gradient-to-r px-1 from-sky-400 to-indigo-500 text-white   rounded-full font-bold"
             disabled={isLoading}
             type="submit"
           >
-            singup
+            
+            {isLoading ?<MiniSpinner  colorSpinner='indigo-600'/>:'singup'}
+
 
           </button>
-          {isLoading ? <MiniSpinner colorSpinner="indigo-600" /> : ""}
         </div>
         
       </form>
