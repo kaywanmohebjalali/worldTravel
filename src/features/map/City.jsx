@@ -48,7 +48,7 @@ if(!desiredCity)return<div className="bg-gray-800 w-full h-[100vh] flex justify-
       <div 
       style={{ gridTemplateColumns: "repeat(auto-fit, minmax(100px, 600px))" }}
 
-      className="grid gap-4  items-start justify-center text-start">
+      className="grid gap-4  items-start justify-center text-start landscape:px-2">
         <section
 
         className="w-full  bg-gray-600 p-2 sm:p-4 mx-auto rounded-sm flex flex-col items-start gap-4">
